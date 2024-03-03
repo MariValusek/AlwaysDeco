@@ -284,7 +284,7 @@ footer h5{
     flex-direction: row;
     height: 450px;
     margin-top: 200px;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 #contacto .formulario, 
 #contacto .contactanos{
@@ -613,6 +613,8 @@ button:hover {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 0;
+        margin-top: 15px;
     }
     header .list-item a{
         font-size: 14px;
@@ -711,6 +713,7 @@ button:hover {
     h4{
         font-size: 16px;
         text-align: center;
+        font-weight: 600;
     }
     .enlaces-pie{
         font-size: 14px;
@@ -720,9 +723,10 @@ button:hover {
     }
     footer h5{
         align-items: center;
-        margin-top: 20px;
+
         font-size: 12;
         text-align: center;
+        padding: 25px 10px 0px 10px;
     }
     #sobreNosotros{
         font-size: 16px;
@@ -742,6 +746,54 @@ button:hover {
     #NuestroEquipo .equipo{
         padding: 20px;
 
+    }
+    #contacto{
+        flex-direction: column;
+        height: 500px;
+        margin-top: 110px;
+        justify-content: center;
+    }
+    #contacto .formulario{
+        height: 90%;
+        width: 90%;
+    }
+    #contacto .contactanos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactanos h2{
+        font-size: 18px;
+    }
+    .contactanos h4{
+        font-size: 16px;
+    }
+    .formulario h3{
+        font-size: 16px;
+        padding-left: 0;
+        margin-left: -50px;
+    }
+    .formulario form textarea{
+        height: 100%;
+        width: 115%;
+        margin-left: -50px;
+    }
+    #miCuenta{
+        margin-top: 110px;
+    }
+    #nuevaContraseña{
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        margin-top: 120px;
+        margin-left: 20%;
+    }
+    #nuevaContraseña h3 {
+        font-size: 16px;
+        padding-right: 50px;
+
+    }
+    #nuevaContraseña form label{
+        font-size: 14px;
     }
 
 }
