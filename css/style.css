@@ -24,7 +24,7 @@ header ul{
 header .list-item a{
     text-decoration: none;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     color: rgb(52, 49, 49);
     padding: 12px;
 }
@@ -33,6 +33,9 @@ header .alwaysdeco img{
     margin-top: 0%;
     width: 250px;
     padding: 12px 24px;
+}
+.alwaysdeco2 img{
+    display: none;
 }
 #hero{
     height: 70%;
@@ -70,14 +73,19 @@ header .alwaysdeco img{
 
 .despegable{
     position: relative;
+    font-size: 18px;
+    font-weight: 500;
 }
 .despegable:hover .contenedor-despegable{
     display: flex;
 }
+.contenedor-despegable a{
+    font-weight: 600;
+}
 .contenedor-despegable {
     display: none;
     position: absolute;
-    top: 25;
+    top: 51px;
     left: 0;
     background-color: rgba(252, 253, 245, 0.5);
     padding: 12px;
@@ -88,7 +96,6 @@ header .alwaysdeco img{
     border-right: unset;
     padding: 12px 0px;
     flex-direction: column;
-
 }
 .contenedor-despegable li .habitacion {
     display: flex;
@@ -194,7 +201,8 @@ header .alwaysdeco img{
 }
 footer{
     background-color: rgb(255, 226, 95);
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 .contenedor{
     width: 1140px;
@@ -232,6 +240,7 @@ footer h5{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
 }
 #sobreNosotros{
     font-size: 18px;
@@ -348,6 +357,7 @@ footer h5{
     margin-top: 180px;
     margin-left: 20%;
 }
+
 #miCuenta h3{
     font-size: 20px;
     font-weight: 600;
@@ -591,6 +601,147 @@ button:hover {
     font-weight: 500;
 }
 
-@media (max-width:480px){
-    
+@media (max-width: 480px){
+    header {
+        top: 0px;
+        max-width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header .list-item a{
+        font-size: 14px;
+    }
+    .alwaysdeco img{
+        display: none;
+    }
+
+    .despegable{
+        font-size: 14px;
+    }
+    .contenedor-despegable a{
+        font-weight: 600;
+    }
+    .contenedor-despegable {
+        top: 48px;
+    }
+    #hero{
+        height: 60%;
+    }
+    #hero h1{
+        font-size: 32px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #hero p{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #masVendidos{
+        padding: 10px 10px;
+    }
+    #masVendidos h2{
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #masVendidos .listaMasVendidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .producto img{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        align-items: center;
+    }
+    #masVendidos button{
+        margin-left: 130;
+        margin-top: -25;
+    }
+    #mapaInicio{
+        display: flex;
+        flex-direction: column;
+    }
+    #mapaInicio .domicilio,
+    #mapaInicio .mapa{
+        width: 20%;
+        height: 300px;
+    }
+    #mapaInicio .mapa iframe{
+        height: 100%;
+        width: 400%;
+        align-items: center;
+        margin-left: 50%;
+        margin-top: -90%;
+    }
+    #mapaInicio .domicilio{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 300%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .domicilio h2, h3{
+        font-weight: 400;
+        justify-content: center;
+    }
+    .domicilio h2{
+        font-size: 20px;
+    }
+    .domicilio h3{
+        font-size: 16px;
+    }
+    .contenedor{
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+    }
+    h4{
+        font-size: 16px;
+        text-align: center;
+    }
+    .enlaces-pie{
+        font-size: 14px;
+    }
+    .enlaces-pie p{
+        text-align: center;
+    }
+    footer h5{
+        align-items: center;
+        margin-top: 20px;
+        font-size: 12;
+        text-align: center;
+    }
+    #sobreNosotros{
+        font-size: 16px;
+        margin: 10%;
+        padding: 50px 10px;
+    }
+    #NuestroEquipo{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10;
+    }
+    .titulo{
+        width: fit-content;
+        margin-left: 50px;
+        margin-top: -50px;
+    }
+    #NuestroEquipo .equipo{
+        padding: 20px;
+
+    }
+
 }
