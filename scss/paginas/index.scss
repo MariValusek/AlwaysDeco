@@ -1,0 +1,133 @@
+#hero{
+    height: 70%;
+    background-image: url('../imagenes/inicioindex.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    h1{
+        font-size: 72;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: rgb(52, 49, 49);
+    }
+    p{
+        color: rgb(52, 49, 49);
+        font-size: 24px;
+        margin-bottom: 48px;
+    }
+    a{
+        background-color: rgba(52, 49, 49, 0.8);
+        padding: 12px 24px;
+        border-radius: 8px;
+        color: rgb(225, 222, 89);
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        width: fit-content;
+    }
+}
+#masVendidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60%;
+    padding: 20px 20px;
+    left: 0;
+    h2{
+        color: rgb(52, 49, 49);
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        padding: 3% 3%;
+    }
+    button{
+        display: flex;
+        border: 1px solid  rgba(255, 226, 95, 0.8);
+        padding: 5px 28px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        width: fit-content;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 180px;
+        margin-top: -30;
+        position: relative;
+        background-color: rgba(253, 230, 128, 0.6);
+        border-color:rgba(255, 226, 95, 0.2);
+        color: rgb(52, 49, 49);
+    }
+    .listaMasVendidos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        .producto img{
+            display: flex;
+            width: 450px;
+            height: 600px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 10px 10px;
+        }
+        .producto h3{
+            display: flex;
+            color: rgb(52, 49, 49);
+            font-size: 24px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            justify-content: space-evenly;
+        }
+    }
+}
+#mapaInicio{
+    display: flex;
+    flex-direction: row;
+    padding: 10% 3% 5% 3%;
+    .domicilio,
+     .mapa{
+    width: 50%;
+    height: 300px;
+    margin-top: 30%;
+    }
+    .domicilio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin-top: 40%;
+        h2, h3{
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .mapa {
+        iframe{
+        height: 70%;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+        }
+    }
+    .galeria{
+        height: 70%;
+        width: 70%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,38 @@
+#sobreNosotros{
+    font-size: 18px;
+    color: rgb(52, 49, 49);
+    margin: 10% 15%;
+}
+#NuestroEquipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .equipo{
+        display: flex;
+        flex: 25%;
+        padding: 50px;
+        width: 350px;
+        height: 500px;
+        justify-content: space-around;
+        div{
+         img{
+            display: flex;
+            width: 450px;
+            height: 600px;
+            justify-content: space-around;
+            padding: 10px;
+        } 
+        }
+    }
+}
+.titulo{
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(52, 49, 49);
+    background-color: rgba(255, 226, 95, 0.6);
+    width: fit-content;
+    padding: 7px;
+    margin-left: 41%;
+    margin-top: -5%;
+}

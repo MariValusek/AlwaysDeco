@@ -1,0 +1,70 @@
+header{
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(252, 253, 245, 0.5);
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            .despegable{
+                position: relative;
+                font-size: 18px;
+                font-weight: 500;
+                    /* &:hover .contenedor-despegable{
+                    display: flex;*/
+                .contenedor-despegable {
+                    display: none;
+                    position: absolute;
+                    top: 59px;
+                    left: 0;
+                    background-color: rgba(252, 253, 245, 0.5);
+                    padding: 0 20px;
+                    flex-direction: column;
+                    cursor: pointer;
+                        a{
+                            font-weight: 600;
+                        }
+                        li{
+                            border-right: unset;
+                            padding: 12px 0px;
+                            flex-direction: column;
+                            .habitacion {
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 10px;
+                            }
+                            .manteleria {
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list-item a{
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(52, 49, 49);
+            padding: 12px;
+        }
+        .alwaysdeco img{
+            margin-left: 0%;
+            margin-top: 0%;
+            width: 250px;
+            padding: 12px 24px;
+        }
+        .alwaysdeco2 img{
+            display: none;
+        }
+    

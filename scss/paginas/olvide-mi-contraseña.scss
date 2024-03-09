@@ -1,0 +1,42 @@
+#nuevaContraseña{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    margin-top: 180px;
+    margin-left: 20%;
+    h3 {
+        font-size: 22px;
+    }
+    form {
+        input{
+            display: flex;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 16px;
+            margin-top: 5px;
+            border-radius: 8px;
+            color: rgb(52, 49, 49);
+            background-color: rgba(247, 247, 239, 0.8);
+        }
+        label{
+            display: flex;
+            position: relative; 
+            margin-bottom: 0px;
+            margin-top: 20px;
+        }
+    }
+    input{
+        display: flex;
+        position: relative;
+        margin-top: 30px;
+        width: min-content;
+        background-color: rgba(255, 226, 95, 0.8);
+        padding: 10px 18px;
+        border-radius: 4px;
+        border-color:rgba(255, 226, 95, 0.2);
+        color: rgb(52, 49, 49);
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
