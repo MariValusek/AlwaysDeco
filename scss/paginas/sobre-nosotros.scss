@@ -2,11 +2,21 @@
     font-size: 18px;
     color: rgb(52, 49, 49);
     margin: 10% 15%;
+    @media (max-width: 480px){
+        font-size: 16px;
+        margin: 10%;
+        padding: 50px 10px;
+    }
 }
 #NuestroEquipo{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @media (max-width: 480px){
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 10;
+    }
     .equipo{
         display: flex;
         flex: 25%;
@@ -14,6 +24,9 @@
         width: 350px;
         height: 500px;
         justify-content: space-around;
+        @media (max-width: 480px){
+            padding: 20px;
+        }
         div{
          img{
             display: flex;
@@ -35,4 +48,9 @@
     padding: 7px;
     margin-left: 41%;
     margin-top: -5%;
+    @media (max-width: 480px){
+        width: fit-content;
+        margin-left: 50px;
+        margin-top: -50px;
+    }
 }

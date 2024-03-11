@@ -8,18 +8,39 @@ header{
     justify-content: center;
     align-items: center;
     background-color: rgba(252, 253, 245, 0.5);
+    @media (max-width: 480px){
+        top: 0px;
+        max-width: 100%;
+    }
+    nav {
+        @media (max-width: 480px){
+            width: 100%;
+        }
         ul{
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             list-style-type: none;
+            @media (max-width: 480px){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0;
+                margin-top: 15px;
+                cursor: pointer;
+            }
             .despegable{
                 position: relative;
                 font-size: 18px;
                 font-weight: 500;
-                    /* &:hover .contenedor-despegable{
-                    display: flex;*/
+                &:hover .contenedor-despegable{
+                    display: flex;
+                }
+                @media (max-width: 480px){
+                    font-size: 14px;
+                    cursor: pointer;
+                }
                 .contenedor-despegable {
                     display: none;
                     position: absolute;
@@ -29,42 +50,51 @@ header{
                     padding: 0 20px;
                     flex-direction: column;
                     cursor: pointer;
-                        a{
-                            font-weight: 600;
-                        }
-                        li{
-                            border-right: unset;
-                            padding: 12px 0px;
+                    @media (max-width: 480px){
+                        top: 48px;
+                    }
+                    a{
+                        font-weight: 600;
+                    }
+                    li{
+                        border-right: unset;
+                        padding: 12px 0px;
+                        flex-direction: column;
+                        .habitacion {
+                            display: flex;
                             flex-direction: column;
-                            .habitacion {
-                                display: flex;
-                                flex-direction: column;
-                                margin-left: 10px;
-                            }
-                            .manteleria {
-                                display: flex;
-                                flex-direction: column;
-                                margin-left: 10px;
-                            }
+                            margin-left: 10px;
+                        }
+                        .manteleria {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 10px;
                         }
                     }
                 }
             }
         }
-        .list-item a{
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 500;
-            color: rgb(52, 49, 49);
-            padding: 12px;
+    }
+    .list-item a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(52, 49, 49);
+        padding: 12px;
+        @media (max-width: 480px){
+            font-size: 14px;
         }
-        .alwaysdeco img{
-            margin-left: 0%;
-            margin-top: 0%;
-            width: 250px;
-            padding: 12px 24px;
-        }
-        .alwaysdeco2 img{
+    }
+    .alwaysdeco img{
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 250px;
+        padding: 12px 24px;
+        @media (max-width: 480px){
             display: none;
         }
-    
+    }
+    .alwaysdeco2 img{
+        display: none;
+    }
+}
