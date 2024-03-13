@@ -62,16 +62,22 @@ header nav ul .despegable:hover .contenedor-despegable {
 header nav ul .despegable a {
   text-decoration: none;
   list-style-type: none;
+  color: rgb(52, 49, 49);
+  transition: font-size 0.3s;
+}
+header nav ul .despegable:hover {
+  font-size: 1.2em;
 }
 header nav ul .despegable .contenedor-despegable {
   display: none;
   position: absolute;
-  top: 59px;
+  top: 40px;
   left: 0;
   background-color: rgba(252, 253, 245, 0.5);
   padding: 0 20px;
   flex-direction: column;
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 480px) {
   header nav ul .despegable .contenedor-despegable {
@@ -81,6 +87,10 @@ header nav ul .despegable .contenedor-despegable {
 header nav ul .despegable .contenedor-despegable a {
   font-weight: 500;
   text-decoration: none;
+  transition: font-size 0.3s;
+}
+header nav ul .despegable .contenedor-despegable:hover {
+  font-size: 1.1em;
 }
 header nav ul .despegable .contenedor-despegable li {
   border-right: unset;
@@ -103,9 +113,13 @@ header nav ul .list-item a {
   font-weight: 500;
   color: rgb(52, 49, 49);
   padding: 12px;
+  transition: font-size 0.3s;
+}
+header nav ul .list-item a:hover {
+  font-size: 1.2em;
 }
 @media (max-width: 480px) {
-  header nav ul .list-item a {
+  header nav ul .list-item {
     font-size: 14px;
   }
 }
@@ -163,14 +177,18 @@ header nav ul .alwaysdeco img {
   }
 }
 #hero a {
-  background-color: rgba(52, 49, 49, 0.8);
   padding: 12px 24px;
   border-radius: 8px;
-  color: rgb(225, 222, 89);
+  background-color: rgba(253, 230, 128, 0.6);
+  border-color: rgba(255, 226, 95, 0.2);
+  color: rgb(52, 49, 49);
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   width: fit-content;
+}
+#hero a:hover {
+  background-color: rgba(255, 255, 243, 0.8);
 }
 
 #masVendidos {
@@ -204,9 +222,8 @@ header nav ul .alwaysdeco img {
 }
 #masVendidos button {
   display: flex;
-  border: 1px solid rgba(255, 226, 95, 0.8);
   padding: 5px 28px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
@@ -219,6 +236,15 @@ header nav ul .alwaysdeco img {
   background-color: rgba(253, 230, 128, 0.6);
   border-color: rgba(255, 226, 95, 0.2);
   color: rgb(52, 49, 49);
+  cursor: pointer;
+}
+#masVendidos button:hover {
+  background-color: rgba(255, 255, 243, 0.8);
+}
+@media (max-width: 480px) {
+  #masVendidos button:hover {
+    background-color: rgba(255, 255, 243, 0.8);
+  }
 }
 @media (max-width: 480px) {
   #masVendidos button {
@@ -383,6 +409,7 @@ footer .contenedor {
 }
 footer .contenedor h4 {
   font-size: 18px;
+  font-weight: 600;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -423,6 +450,10 @@ footer .contenedor .enlaces-pie ul p {
 footer .contenedor .enlaces-pie ul li a {
   text-decoration: none;
   color: rgb(52, 49, 49);
+  transition: font-size 0.3s;
+}
+footer .contenedor .enlaces-pie ul li:hover {
+  font-size: 1.2em;
 }
 footer h5 {
   display: flex;
@@ -654,7 +685,7 @@ footer h5 {
   position: relative;
   font-size: 12px;
   margin-left: 50px;
-  text-decoration: none;
+  color: rgb(52, 49, 49);
 }
 #miCuenta div .ingresar {
   display: flex;
@@ -677,6 +708,9 @@ footer h5 {
   margin-left: 0px;
   margin-top: 60px;
 }
+#miCuenta h4 a {
+  color: rgb(52, 49, 49);
+}
 
 #nuevaContraseña {
   display: flex;
@@ -692,7 +726,7 @@ footer h5 {
   }
 }
 #nuevaContraseña h3 {
-  font-size: 22px;
+  font-size: 18px;
 }
 @media (max-width: 480px) {
   #nuevaContraseña h3 {
@@ -734,6 +768,10 @@ footer h5 {
   font-size: 16px;
   font-weight: 500;
   text-decoration: none;
+}
+#nuevaContraseña a {
+  font-size: 14px;
+  color: rgb(52, 49, 49);
 }
 
 .todosLosProductos {
