@@ -71,7 +71,7 @@ header nav ul .despegable:hover {
 header nav ul .despegable .contenedor-despegable {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 26px;
   left: 0;
   background-color: rgba(252, 253, 245, 0.5);
   padding: 0 20px;
