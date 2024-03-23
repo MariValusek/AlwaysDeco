@@ -238,6 +238,7 @@ header nav ul .alwaysdeco img {
   font-weight: 600;
   margin-bottom: 12px;
   color: rgb(52, 49, 49);
+  text-shadow: 2px 2px 4px rgba(52, 49, 49, 0.8);
 }
 @media (max-width: 480px) {
   #hero h1 {
@@ -248,6 +249,7 @@ header nav ul .alwaysdeco img {
 }
 #hero p {
   color: rgb(52, 49, 49);
+  text-shadow: 2px 2px 4px rgba(185, 181, 181, 0.8);
   font-size: 24px;
   margin-bottom: 48px;
 }
@@ -314,12 +316,13 @@ header nav ul .alwaysdeco img {
   margin-top: -30;
   position: relative;
   background-color: rgb(253, 230, 128);
-  border-color: rgba(255, 226, 95, 0.2);
+  border-color: rgba(138, 138, 134, 0.2);
   color: rgb(52, 49, 49);
   cursor: pointer;
 }
 #masVendidos button:hover {
   background-color: rgba(255, 255, 243, 0.8);
+  transition: 0.2;
 }
 @media (max-width: 480px) {
   #masVendidos button {
@@ -396,7 +399,6 @@ header nav ul .alwaysdeco img {
 @media (max-width: 480px) {
   #mapaInicio .domicilio,
   #mapaInicio .mapa {
-    width: 20%;
     height: 300px;
   }
 }
@@ -413,9 +415,7 @@ header nav ul .alwaysdeco img {
     justify-content: center;
     height: 100%;
     width: 100%;
-    margin-top: 300%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: -30px 0 20px 0;
   }
 }
 #mapaInicio .domicilio h2, #mapaInicio .domicilio h3 {
@@ -452,11 +452,10 @@ header nav ul .alwaysdeco img {
 }
 @media (max-width: 480px) {
   #mapaInicio .mapa iframe {
-    height: 100%;
-    width: 400%;
+    flex-direction: column;
     align-items: center;
-    margin-left: 50%;
-    margin-top: -90%;
+    width: 170%;
+    margin-left: -63px;
   }
 }
 #mapaInicio .galeria {
@@ -516,7 +515,7 @@ header nav ul .alwaysdeco img {
 }
 .todosLosProductos .contenedor-productos .productos button {
   background-color: rgb(253, 230, 128);
-  border-color: rgba(255, 226, 95, 0.2);
+  border-color: rgba(77, 77, 68, 0.2);
   color: rgb(52, 49, 49);
   padding: 10px;
   border-radius: 8px;
@@ -529,6 +528,7 @@ header nav ul .alwaysdeco img {
     width: 100px;
     font-size: 10px;
     margin-top: 0px;
+    color: rgb(0, 0, 0);
   }
 }
 .todosLosProductos .contenedor-productos .productos button:hover {
@@ -570,19 +570,26 @@ header nav ul .alwaysdeco img {
   display: flex;
   justify-content: center;
 }
-.todosLosProductos .productoHabitacion .produ div div .linea,
-.todosLosProductos .productoCocina .produ div div .linea,
-.todosLosProductos .productoBaño .produ div div .linea {
-  position: absolute;
-  width: 38%;
-  top: 65px;
+.todosLosProductos .productoHabitacion .produ div,
+.todosLosProductos .productoCocina .produ div,
+.todosLosProductos .productoBaño .produ div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.todosLosProductos .productoHabitacion .produ div .linea,
+.todosLosProductos .productoCocina .produ div .linea,
+.todosLosProductos .productoBaño .produ div .linea {
+  width: 225px;
   z-index: -1;
-  border: 2px solid rgb(253, 230, 128);
+  background: rgb(253, 230, 128);
+  height: 2px;
 }
 @media (max-width: 480px) {
-  .todosLosProductos .productoHabitacion .produ div div .linea,
-  .todosLosProductos .productoCocina .produ div div .linea,
-  .todosLosProductos .productoBaño .produ div div .linea {
+  .todosLosProductos .productoHabitacion .produ div .linea,
+  .todosLosProductos .productoCocina .produ div .linea,
+  .todosLosProductos .productoBaño .produ div .linea {
     top: 50px;
     width: 60%;
   }
@@ -591,9 +598,9 @@ header nav ul .alwaysdeco img {
 .todosLosProductos .productoCocina .produ div div .separadores h2,
 .todosLosProductos .productoBaño .produ div div .separadores h2 {
   margin-top: 40px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.932);
   width: fit-content;
-  font-size: 36px;
+  font-size: 38px;
   padding: 0px 12px;
   font-weight: 600;
   text-align: center;
@@ -635,21 +642,25 @@ header nav ul .alwaysdeco img {
   display: flex;
   flex: 25%;
   padding: 50px;
-  width: 350px;
-  height: 500px;
   justify-content: space-around;
 }
 @media (max-width: 480px) {
   #NuestroEquipo .equipo {
-    padding: 20px;
+    padding: 10px;
   }
 }
-#NuestroEquipo .equipo div img {
+#NuestroEquipo .equipo img {
   display: flex;
-  width: 450px;
-  height: 600px;
+  width: 350px;
   justify-content: space-around;
   padding: 10px;
+}
+@media (max-width: 480px) {
+  #NuestroEquipo .equipo img {
+    width: 300px;
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .titulo {
@@ -683,6 +694,7 @@ header nav ul .alwaysdeco img {
     flex-direction: column;
     height: 500px;
     margin-top: 110px;
+    margin-left: 35%;
     justify-content: center;
   }
 }

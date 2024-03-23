@@ -21,21 +21,22 @@
         display: flex;
         flex: 25%;
         padding: 50px;
-        width: 350px;
-        height: 500px;
         justify-content: space-around;
         @media (max-width: 480px){
-            padding: 20px;
+            padding: 10px;
         }
-        div{
-         img{
+        img{
             display: flex;
-            width: 450px;
-            height: 600px;
+            width: 350px;
             justify-content: space-around;
             padding: 10px;
-        } 
+            @media (max-width: 480px){
+                width: 300px;
+                padding: 0;
+                align-items: center;
+            } 
         }
+        
     }
 
 }
